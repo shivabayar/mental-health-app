@@ -20,10 +20,8 @@ If Node.js is not already installed, follow these steps:
 
    ```bash
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-   ```bash
+   nvm install 18
 
-   ```bash
-    nvm install 18
 2. Create a Google API Key
 
 3. Configure Environment Variables
@@ -41,11 +39,14 @@ To ensure that SQLite is properly set up, add the following lines to your .bash_
 export LDFLAGS="-L/opt/homebrew/opt/sqlite/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/sqlite/include"
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
-```bash
 
+```bash
 source ~/.bash_profile
 
 6. Run the app
+`chmod +x runApplication.sh`
+
+```bash
 ./runApplication.sh
 
 
